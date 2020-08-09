@@ -4,23 +4,43 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".TimeFragment"
-    android:background="#fff">
 
-    <!-- TODO: Update blank fragment layout -->
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:layout_margin="20dp"
     >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        >
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            />
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-       android:src="@drawable/reservations"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:src="@drawable/calendar_time"
         android:layout_margin="20dp"
         />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            android:text="ليس لديك حجوزات "
+            android:textSize="25sp"
+            android:textColor="#000"
+            android:layout_margin="20dp"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            />
+    </LinearLayout>
 
-"
-
-</LinearLayout>
 </FrameLayout>
