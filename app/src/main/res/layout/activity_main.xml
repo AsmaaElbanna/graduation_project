@@ -1,42 +1,193 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/app_whit"
     android:orientation="vertical"
-    android:background="#ffffff"
     tools:context=".MainActivity">
-<ImageView
-    android:layout_width="200dp"
-    android:layout_gravity="center"
-    android:layout_weight="2"
-    android:layout_height="0dp"
-    android:src="@drawable/shefaa"
-    android:layout_margin="20dp"
-   />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        style="@style/general_main_style"
+        android:src="@drawable/shefaa"
+        android:contentDescription="@string/my_logo" />
+    <!--
 
 <View
-    android:layout_width="match_parent"
-    android:layout_height="0dp"
-    android:layout_weight="3"
-    />
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-       android:text="تسجيل الدخول"
-        android:fontFamily="serif"
-        android:textSize="25sp"
-        android:textColor="#24b78d"
-        android:layout_margin="20dp"
-        android:background="@drawable/mybutton"
-        >
+   android:layout_width="match_parent"
+   android:layout_height="0dp"
+   android:layout_weight="3"
+   />
+   <Button
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="1"
+      android:text="تسجيل الدخول"
+       android:fontFamily="serif"
+       android:textSize="25sp"
+       android:textColor="#24b78d"
+       android:layout_margin="20dp"
+       android:background="@drawable/mybutton"
+       >
 
-    </Button>
+   </Button>
 
 </LinearLayout>
+-->
+    <!--
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            style="@style/genral_main_style"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/ic_launcher"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FF000000"/>
+    -->
+    <TextView
+        style="@style/general_main_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login_or_new_text" />
 
+    <androidx.cardview.widget.CardView
+        style="@style/general_main_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/app_gray"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="16dp">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/edit_text_email_id"
+                    style="@style/genral_signIn_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/enter_your_email_address"
+                    android:inputType="textEmailAddress"
+                    android:importantForAutofill="no" />
+
+                <EditText
+                    android:id="@+id/edit_text_password_id"
+                    style="@style/genral_signIn_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/enter_your_password"
+                    android:inputType="textPassword"
+                    android:importantForAutofill="no" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/genral_signIn_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/email"
+                    android:textSize="18sp" />
+
+                <TextView
+                    style="@style/genral_signIn_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/password"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        style="@style/general_main_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/app_green"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="16dp">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@null"
+            android:text="@string/login"
+            android:textColor="@color/app_whit" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        style="@style/general_main_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/app_whit"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="end"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center"
+                android:paddingLeft="60dp"
+                android:text="@string/login_gmail"
+                android:textColor="@color/app_light_gray" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50sp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="10dp"
+                android:contentDescription="google logo"
+                android:src="@mipmap/ic_google_g_foreground" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        style="@style/general_main_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/app_light_gray"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="16dp">
+
+        <Button
+            android:id="@+id/new_account_id"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@null"
+            android:text="@string/create_new_account"
+            android:textColor="@color/app_whit" />
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
 

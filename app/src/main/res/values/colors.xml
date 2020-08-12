@@ -3,4 +3,13 @@
     <color name="colorPrimary">#21ba8e</color>
     <color name="colorPrimaryDark">#167A5D</color>
     <color name="colorAccent">#03DAC5</color>
+
+    <!-- app custom colors -->
+    <color name="app_whit">#FDFDFF</color>
+    <color name="app_green">#24b78d</color>
+    <color name="app_gray">#363845</color>
+    <color name="app_light_gray">#525568</color>
+    <color name="app_hint_gray">#656880</color>
+    <color name="app_facebook">#0e3189</color>
+
 </resources>
