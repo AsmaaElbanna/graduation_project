@@ -3,6 +3,7 @@ package com.example.seniorproject;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
@@ -12,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.pagetwo);
         fragmentManager=getSupportFragmentManager();
     }
 
@@ -39,4 +40,6 @@ public class MainActivity extends AppCompatActivity {
     public void moreClick(View view) {
         fragmentManager.beginTransaction().replace(R.id.place_holder,new MoreFragment()).commit();
     }
+
+
 }
