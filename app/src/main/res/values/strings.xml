@@ -4,15 +4,18 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
     <!-- login & Sign up Strings values -->
-    <string name="login_or_new_text"><b><font color='#24b78d' size="28">الدخول</font></b><font color='#525568' size="18"> باستخدام بريد إليكتروني مسجل من قبل</font> </string>
-    <string name="email">إميل</string>
+    <string name="login_or_new_text"><b><font color='#24b78d' size="28">الدخول</font></b><font color='#525568' size="18"></font> </string>
+    <string name="email">البريد الإلكتروني</string>
     <string name="password">كلمة المرور</string>
     <string name="enter_your_full_name">أدخل أسم المستخدم</string>
-    <string name="enter_your_email_address">أدخل عنوان البريد الإلكتروني</string>
+    <string name="enter_your_email_address">أدخل البريد الإلكتروني</string>
     <string name="enter_your_password">أدخل كلمة المرور</string>
+    <string name="conf_your_password">تأكيد كلمة المرور</string>
     <string name="login">تسجيل الدخول</string>
     <string name="login_gmail">الدخول باستخدام جوجل</string>
     <string name="login_facebook">الدخول باستخدام فيسبوك</string>
     <string name="create_new_account">تسجيل مستخدم جديد</string>
     <string name="my_logo">my logo</string>
+    <string name="welcome_word">مرحبا</string>
+    <string name="wrong_pass">كلمة مرور غير مطابقة</string>
 </resources>

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/app_whit"
     android:orientation="vertical"
-    tools:context=".SignIn">
+    tools:context=".Login">
 
     <ImageView
         android:layout_width="200dp"
@@ -51,6 +51,7 @@
     -->
     <TextView
         style="@style/general_main_style"
+        android:paddingRight="16dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/login_or_new_text" />
@@ -77,16 +78,16 @@
 
                 <EditText
                     android:id="@+id/edit_text_email_id"
-                    style="@style/genral_signIn_style"
+                    style="@style/general_login_style"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/enter_your_email_address"
                     android:inputType="textEmailAddress"
-                    android:importantForAutofill="no" />
+                    android:importantForAutofill="yes" />
 
                 <EditText
                     android:id="@+id/edit_text_password_id"
-                    style="@style/genral_signIn_style"
+                    style="@style/general_login_style"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/enter_your_password"
@@ -94,7 +95,7 @@
                     android:importantForAutofill="no" />
 
             </LinearLayout>
-
+<!--
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -115,7 +116,7 @@
                     android:textSize="18sp" />
 
             </LinearLayout>
-
+-->
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
@@ -174,7 +175,7 @@
 
         </LinearLayout>
     </androidx.cardview.widget.CardView>
-
+<!--
     <androidx.cardview.widget.CardView
         style="@style/general_main_style"
         android:layout_width="match_parent"
@@ -192,5 +193,34 @@
             android:textColor="@color/app_whit"
             android:onClick="page_two"/>
     </androidx.cardview.widget.CardView>
+-->
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="سجل الأن"
+            android:textColor="@color/app_green"
+            android:fontFamily="@font/cairo_regular"
+            android:textSize="21sp"
+            android:onClick="openSignUpActivity" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="لا تملك حساب؟ "
+            android:textColor="@color/app_light_gray"
+            android:fontFamily="@font/cairo_regular"
+            android:textSize="18sp" />
+    </LinearLayout>
 </LinearLayout>
 
